@@ -2,17 +2,15 @@ import React from "react";
 import "./styles/Badge.css";
 import confLogo from "../images/badge-header.svg";
 
-// Los componentes son clases
 class Badge extends React.Component {
-  // render define el resultado que vamos a ver en pantalla
   render() {
     
     // props
     const {
-      firstName, lastName
+      firstName, lastName, twitter, jobTitle
     } = this.props
-    const twitter = "AcJoell";
-    const jobTitle = "Front-end Developer";
+
+    const empty = "otra manera de hacer un prop";
 
     return (
       <div className="badge">
@@ -28,7 +26,7 @@ class Badge extends React.Component {
           ></img>
           <h1>
             {/* le llamamos a this.props.name en caso de que le demos valor en nuestro index.js */}
-            {firstName} <br /> {lastName} {/* O si quieres hacerlo de manera larga this.props.name pero no es muy leible */}
+            {firstName} <br /> {lastName}
           </h1>
         </div>
 
