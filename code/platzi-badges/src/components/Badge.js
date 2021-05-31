@@ -6,6 +6,14 @@ import confLogo from "../images/badge-header.svg";
 class Badge extends React.Component {
   // render define el resultado que vamos a ver en pantalla
   render() {
+    
+    // props
+    const {
+      firstName, lastName
+    } = this.props
+    const twitter = "AcJoell";
+    const jobTitle = "Front-end Developer";
+
     return (
       <div className="badge">
         <div className="badge_header">
@@ -19,13 +27,14 @@ class Badge extends React.Component {
             alt="Avatar"
           ></img>
           <h1>
-            Joel <br /> Acosta
+            {/* le llamamos a this.props.name en caso de que le demos valor en nuestro index.js */}
+            {firstName} <br /> {lastName} {/* O si quieres hacerlo de manera larga this.props.name pero no es muy leible */}
           </h1>
         </div>
 
         <div className="badge_section-info">
-          <h4>Front-end Developer</h4>
-          <div>@AcJoell</div>
+          <h4>{jobTitle}</h4>
+          <div>@{twitter}</div>
         </div>
 
         <div className="badge_footer">#platziConf</div>

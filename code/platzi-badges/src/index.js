@@ -10,4 +10,4 @@ import Badge from "./components/Badge";
 
 const container = document.getElementById("app");
 // Darle etiquetas autocerradas al nuevo elemento que importamos
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(<Badge firstName="Joel" lastName="Acosta" />, container);
