@@ -3,6 +3,7 @@ import "./styles/BadgeNew.css";
 import header from "../images/badge-header.svg";
 import Navbar from "../components/Navbar.js";
 import Badge from "../components/Badge.js";
+import BadgeForm from "../components/BadgeForm.js";
 
 class BadgeNew extends React.Component {
   render() {
@@ -23,6 +24,9 @@ class BadgeNew extends React.Component {
                 twitter="AcJoell"
                 jobTitle="Front-end Developer"
               />
+            </div>
+            <div className="col">
+              <BadgeForm />
             </div>
           </div>
         </div>

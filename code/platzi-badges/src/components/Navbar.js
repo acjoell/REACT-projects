@@ -8,7 +8,7 @@ class Navbar extends React.Component {
       <div className="Navbar">
         <div className="container-fluid">
           <a href="/" className="Navbar_brand">
-            <img className="Navbar-brand-logo" src={logo} alt="Logo" />
+            <img className="Navbar_brand-logo" src={logo} alt="Logo" />
             <span className="fw-light">Platzi</span>
             <span className="fw-bold">Conf</span>
           </a>
