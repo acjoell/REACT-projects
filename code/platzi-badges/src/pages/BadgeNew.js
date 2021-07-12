@@ -1,7 +1,10 @@
 import React from "react";
 import "./styles/BadgeNew.css";
-import header from "../images/badge-header.svg";
+
 import Navbar from "../components/Navbar.js";
+
+import header from "../images/badge-header.svg";
+
 import Badge from "../components/Badge.js";
 import BadgeForm from "../components/BadgeForm.js";
 

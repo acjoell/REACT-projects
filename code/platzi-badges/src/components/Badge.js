@@ -4,11 +4,8 @@ import confLogo from "../images/badge-header.svg";
 
 class Badge extends React.Component {
   render() {
-    
     // props
-    const {
-      firstName, lastName, twitter, jobTitle
-    } = this.props
+    const { firstName, lastName, twitter, jobTitle } = this.props;
 
     const empty = "otra manera de hacer un prop";
 
@@ -21,7 +18,7 @@ class Badge extends React.Component {
         <div className="badge_section-name">
           <img
             className="badge_avatar"
-            src="https://www.gravatar.com/avatar?d=identicon"
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
             alt="Avatar"
           ></img>
           <h1>
