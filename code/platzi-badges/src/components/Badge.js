@@ -7,7 +7,7 @@ class Badge extends React.Component {
     // props
     const { firstName, lastName, twitter, jobTitle } = this.props;
 
-    const empty = "otra manera de hacer un prop";
+    // const empty = "otra manera de hacer un prop";
 
     return (
       <div className="badge">

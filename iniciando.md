@@ -33,6 +33,7 @@ Si usamos `jsx` en un archivo, siempre tenemos que escrbir:
 ```js
 import React from "react";
 ```
+
 > De esta manera no nos preocupamos de que nos salga error al cargar nuestro código
 
 # 
