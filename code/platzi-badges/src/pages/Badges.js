@@ -11,7 +11,7 @@ class Badges extends React.Component {
     console.log("1. constructor()");
 
     this.state = {
-      data: [],
+      data: undefin,
     };
   }
 
