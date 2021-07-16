@@ -24,6 +24,8 @@ async function callApi(endpoint, options = {}) {
 const api = {
   badges: {
     list() {
+      // throw new Error('Not found'); en caso de que no encuentre
+      // return []; en caso de que no haya algun badge
       return callApi('/badges');
     },
     create(badge) {
