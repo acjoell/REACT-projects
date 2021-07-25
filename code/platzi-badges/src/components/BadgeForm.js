@@ -1,7 +1,6 @@
 import React from "react";
 
 class BadgeForm extends React.Component {
-
   // events
   // handleChange = (e) => {
   //   // console.log({
@@ -19,17 +18,17 @@ class BadgeForm extends React.Component {
     console.log("Button was clicked");
   };
 
-  handleSubmit = (e) => {
-    e.preventDefault(); // evita que se envie el formulario
-    console.log("Form was submited");
-    console.log(this.state);
-  };
+  // handleSubmit = (e) => {
+  //   e.preventDefault(); // evita que se envie el formulario
+  //   console.log("Form was submited");
+  //   console.log(this.state);
+  // };
 
   render() {
     return (
       <div>
         <h1>New Attendant</h1>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <h3>First Name</h3>
             <input
@@ -103,6 +102,9 @@ class BadgeForm extends React.Component {
           <button onClick={this.handleClick} className="btn btn-primary">
             Save
           </button>
+
+          {this.props.error && <p className="text-danger">{this.props.error.message}</p>}
+
         </form>
       </div>
     );
