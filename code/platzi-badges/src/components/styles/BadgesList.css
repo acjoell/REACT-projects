@@ -1,11 +1,16 @@
-.BadgesList {
+.BadgesList  a:link, a:visited, a:active {
+  text-decoration:none;
+  color:black;
+}
+
+.BadgesList ul {
   display: flex;
   flex-direction: column-reverse;
 }
 
 .BadgesList li {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
+}
   
   .BadgesListItem {
     background: #FFFFFF;
