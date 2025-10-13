@@ -1,0 +1,9 @@
+$primary: blueviolet;
+
+.card {
+  background: $primary;
+  padding: 10px;
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
